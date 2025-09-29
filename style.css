@@ -106,22 +106,18 @@ p{
     justify-content: space-between;
 
 }
-
 .details p{
     font-size: 18px;
     height: 17px;
     padding-right: 18px;
     border-right: 1px solid #ccc;
 }
-
 .details p span{
     margin-left: 8px;
 }
-
 .details p b{
     font-weight: 500;
 }
-
 .details button{
     cursor: pointer;
     font-size: 15px;
@@ -132,17 +128,14 @@ p{
     border: 2px solid #009e89;
     transition: 0.3s ease;
 }
-
 .details button:hover{
     color: #fff;
     background: #009e89;
 }
-
 ::selection{
     color: #fff;
     background: #009e89;
 }
-
 @media screen and (max-width : 700px){
     .cards{
         height: 350px;
@@ -155,7 +148,6 @@ p{
         font-size: 35px;
     }
 }
-
 @media screen and ( max-width:530px){
     .cards{
         height: 300px;

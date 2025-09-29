@@ -34,7 +34,7 @@ function flipCard({target: clickedCard}) {
         cardTwo = clickedCard;
         disableDeck = true;
         let cardOneIcon = cardOne.querySelector(".back-view i").classList.value;
-        let cardTwoIcon = cardTwo.querySelector(".front-view i").classList.value;
+        let cardTwoIcon = cardTwo.querySelector(".back-view i").classList.value;
         matchCards(cardOneIcon, cardTwoIcon);
     }
 }
@@ -66,29 +66,29 @@ function matchCards(icon1, icon2) {
 
 function shuffleCards() {
     timeLeft = maxTime;
-    flips = matchCards = 0;
+    flips = matchedCard = 0;
     cardOne = cardTwo = "";
     clearInterval(timer);
     timeTag.innerText = timeLeft;
     flipsTag.innerText = flips;
     disableDeck = isPlaying = false;
 
-    let arr = ["fa-instagram", "fa-linkedin-in", "fa-whatsapp", "fa-youtube", "fa-twitter", "fa-facebook","fa-instagram", "fa-linkedin-in", "fa-whatsapp", "fa-youtube", "fa-twitter", "fa-facebook"];
+    let arr = ["fa-brands fa-instagram", "fa-brands fa-linkedin-in", "fa-brands fa-whatsapp", "fa-brands fa-youtube", "fa-brands fa-twitter", "fa-brands fa-facebook","fa-brands fa-instagram", "fa-brands fa-linkedin-in", "fa-brands fa-whatsapp", "fa-brands fa-youtube", "fa-brands fa-twitter", "fa-brands fa-facebook"];
     arr.sort(() =>Math.random() > 0.5 ? 1 : -1);
 
     cards.forEach((card, index) =>{
         card.classList.remove("flip");
         let iconTag = card.querySelector(".back-view i");
         setTimeout(()=>{
-            iconTag.classList.value = `fa-${arr[index]}`;
+            iconTag.classList.value = arr[index];
         }, 500);
         card.addEventListener("click", flipCard);
     });
 }
 
 shuffleCards();
-
 refreshBtn.addEventListener("click", shuffleCards);
-cards.forEach(card =>{
-    card.addEventListener("click", flipCard);
-});
+
+// cards.forEach(card =>{
+//     card.addEventListener("click", flipCard);
+// });
