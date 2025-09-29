@@ -21,4 +21,5 @@
 
 <p>7. Play Again: Click the "Restart" button to shuffle the cards and start a new game. <br></p>
 
-<img src="game.png">
+<img src="game.PNG">
+
