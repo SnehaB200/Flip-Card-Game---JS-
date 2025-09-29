@@ -18,4 +18,7 @@
 <p>4. If it's a Match: The cards will remain face-up. <br></p>
 <p>5. If it's Not a Match: The cards will flip back over after a short delay. <br></p>
 <p>6. Win the Game: The game is won when you have successfully matched all the pairs on the board. <br></p>
+
 <p>7. Play Again: Click the "Restart" button to shuffle the cards and start a new game. <br></p>
+
+<img src="game.png">
